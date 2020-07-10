@@ -1,5 +1,5 @@
 kind: pipeline
-name: cardinalDiscordBot
+name: cardinaldiscordbot
 
 steps:
 - name: sonarqube
@@ -20,7 +20,7 @@ steps:
   - name: docker_sock
     path: /var/run/docker.sock
   settings:
-    repo: dysnomia/cardinalDiscordBot
+    repo: dysnomia/cardinaldiscordbot
     dockerfile: Dockerfile
     tags: ${DRONE_BRANCH}
     dry_run: true
